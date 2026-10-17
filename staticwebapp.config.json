@@ -1,0 +1,38 @@
+{
+  "globalHeaders": {
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=(), interest-cohort=()",
+    "Content-Security-Policy": "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
+  },
+  "routes": [
+    { "route": "/_source/*", "statusCode": 404 },
+    { "route": "/docs/*", "statusCode": 404 },
+    { "route": "/README.md", "statusCode": 404 },
+    { "route": "/CLAUDE.md", "statusCode": 404 },
+    { "route": "/AGENTS.md", "statusCode": 404 },
+
+    { "route": "/bonjour-tout-le-monde/*", "redirect": "/", "statusCode": 301 },
+    { "route": "/accueil/*", "redirect": "/", "statusCode": 301 },
+    { "route": "/feed/*", "redirect": "/", "statusCode": 301 },
+    { "route": "/comments/*", "redirect": "/", "statusCode": 301 },
+    { "route": "/wp-sitemap.xml", "redirect": "/sitemap.xml", "statusCode": 301 },
+    { "route": "/wp-admin/*", "statusCode": 404 },
+    { "route": "/wp-login.php", "statusCode": 404 },
+    { "route": "/xmlrpc.php", "statusCode": 404 },
+
+    { "route": "/assets/css/*", "headers": { "Cache-Control": "public, max-age=31536000, immutable" } },
+    { "route": "/assets/js/*", "headers": { "Cache-Control": "public, max-age=31536000, immutable" } },
+    { "route": "/assets/fonts/*", "headers": { "Cache-Control": "public, max-age=31536000, immutable" } },
+    { "route": "/assets/*", "headers": { "Cache-Control": "public, max-age=604800" } }
+  ],
+  "responseOverrides": {
+    "404": { "rewrite": "/404.html" }
+  },
+  "mimeTypes": {
+    ".woff2": "font/woff2",
+    ".xml": "application/xml"
+  }
+}
