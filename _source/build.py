@@ -157,7 +157,7 @@ def home(lang):
     body_paras = "\n".join(f"        <p class=\"lead\">{escape(p)}</p>" for p in t["approach_body"])
     ld = ('{"@context":"https://schema.org","@type":"ProfessionalService","name":"Wize","legalName":"WIZE SRL",'
           f'"url":"{SITE}{t["home"]}","logo":"{SITE}/assets/img/icon-512.png","email":"{c["email"]}","telephone":"{c["phone_href"]}",'
-          '"vatID":"BE0691653847","address":{"@type":"PostalAddress","streetAddress":"All\\u00e9e des Chanterelles 14B",'
+          '"vatID":"BE0691653847","address":{"@type":"PostalAddress","streetAddress":"All\\u00e9e des Chanterelles 14",'
           '"postalCode":"5101","addressLocality":"Erpent","addressCountry":"BE"}}')
     html = head(t, "home", t["title"], t["description"])
     html += f'<script type="application/ld+json">{ld}</script>\n</head>\n<body>\n'
