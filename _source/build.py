@@ -110,6 +110,7 @@ def footer(t):
       <div>
         <a class="brand" href="{t['home']}" aria-label="Wize"><img src="/assets/img/icon-192.png" width="30" height="30" alt="" loading="lazy"><span>WIZE</span></a>
         <p>{escape(t['footer_tagline'])}</p>
+        <p><a href="{t['footer_cloud_url']}">{escape(t['footer_cloud'])}</a></p>
       </div>
       <div>
         <p>{c['name']}</p>

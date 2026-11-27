@@ -5,7 +5,7 @@ Règle : aucun tiret cadratin ni demi-cadratin dans les textes visibles.
 Toute modification se fait dans les trois langues, puis : python3 _source/build.py
 """
 
-LAST_UPDATED = {"en": "November 26, 2026", "fr": "26 novembre 2026", "nl": "26 november 2026"}
+LAST_UPDATED = {"en": "November 28, 2026", "fr": "28 novembre 2026", "nl": "28 november 2026"}
 
 COMPANY = {
     "name": "WIZE SRL",
@@ -70,6 +70,8 @@ LANGS = {
         "contact_body": "Tell me where you stand and what is holding you back. I reply personally.",
         "k_email": "Email", "k_phone": "Phone", "k_address": "Address",
         "footer_tagline": "AI at work. People in charge.",
+        "footer_cloud": "Website hosting and maintenance: wize.cloud",
+        "footer_cloud_url": "https://wize.cloud/en/",
         "footer_legal": "Legal",
         "privacy_label": "Privacy policy",
         "cookies_label": "Cookie policy",
@@ -130,6 +132,8 @@ LANGS = {
         "contact_body": "Dites-moi où vous en êtes et ce qui vous bloque. Je vous réponds personnellement.",
         "k_email": "E-mail", "k_phone": "Téléphone", "k_address": "Adresse",
         "footer_tagline": "L’IA au travail. L’humain aux commandes.",
+        "footer_cloud": "Hébergement et entretien de sites : wize.cloud",
+        "footer_cloud_url": "https://wize.cloud/",
         "footer_legal": "Informations légales",
         "privacy_label": "Vie privée",
         "cookies_label": "Cookies",
@@ -190,6 +194,8 @@ LANGS = {
         "contact_body": "Vertel me waar u staat en wat u tegenhoudt. Ik antwoord u persoonlijk.",
         "k_email": "E-mail", "k_phone": "Telefoon", "k_address": "Adres",
         "footer_tagline": "AI aan het werk. De mens aan het stuur.",
+        "footer_cloud": "Hosting en onderhoud van websites: wize.cloud",
+        "footer_cloud_url": "https://wize.cloud/nl/",
         "footer_legal": "Juridisch",
         "privacy_label": "Privacybeleid",
         "cookies_label": "Cookiebeleid",
@@ -207,10 +213,10 @@ LANGS = {
 PRIVACY = {
     "en": ("Privacy policy", [
         ("1. Data controller", ["WIZE SRL, Allée des Chanterelles 14, 5101 Erpent, Belgium. VAT BE0691653847. Email: <a href=\"mailto:info@wize.be\">info@wize.be</a>."]),
-        ("2. Scope", ["This policy covers the websites wize.be and wize.cloud, the client area of the Wize cloud platform (my.wize.cloud) and the services we provide to our clients (consulting, coaching, workshops, website creation, hosting and maintenance)."]),
+        ("2. Scope", ["This policy covers the websites wize.be and wize.cloud, the client area of the wize.cloud website hosting and maintenance service (my.wize.cloud) and the services we provide to our clients (consulting, coaching, workshops, website creation, hosting and maintenance)."]),
         ("3. What data we collect", [
             "<strong>When you contact us</strong> by email or phone: your name, email address, phone number and the content of your message.",
-            "<strong>When you are a client of the Wize cloud platform</strong>:",
+            "<strong>When you are a client of the wize.cloud hosting service</strong>:",
             [
                 "your organisation: name, company or self-employed status, company number, VAT number, address and chosen plan",
                 "the people with access to the client area: name, email address and preferred language",
@@ -261,10 +267,10 @@ PRIVACY = {
     ]),
     "fr": ("Politique de vie privée", [
         ("1. Responsable du traitement", ["WIZE SRL, Allée des Chanterelles 14, 5101 Erpent, Belgique. TVA BE0691653847. E-mail : <a href=\"mailto:info@wize.be\">info@wize.be</a>."]),
-        ("2. Champ d’application", ["Cette politique couvre les sites wize.be et wize.cloud, l’espace client de la plateforme cloud de Wize (my.wize.cloud) et les services que nous fournissons à nos clients (conseil, coaching, ateliers, création, hébergement et entretien de sites)."]),
+        ("2. Champ d’application", ["Cette politique couvre les sites wize.be et wize.cloud, l’espace client du service d’hébergement et d’entretien de sites wize.cloud (my.wize.cloud) et les services que nous fournissons à nos clients (conseil, coaching, ateliers, création, hébergement et entretien de sites)."]),
         ("3. Données collectées", [
             "<strong>Lorsque vous nous contactez</strong> par e-mail ou par téléphone : votre nom, votre adresse e-mail, votre numéro de téléphone et le contenu de votre message.",
-            "<strong>Lorsque vous êtes client de la plateforme cloud de Wize</strong> :",
+            "<strong>Lorsque vous êtes client du service d’hébergement wize.cloud</strong> :",
             [
                 "votre organisation : nom, statut d’entreprise ou d’indépendant, numéro d’entreprise, numéro de TVA, adresse et formule choisie",
                 "les personnes qui ont accès à l’espace client : nom, adresse e-mail et langue préférée",
@@ -315,10 +321,10 @@ PRIVACY = {
     ]),
     "nl": ("Privacybeleid", [
         ("1. Verwerkingsverantwoordelijke", ["WIZE SRL, Allée des Chanterelles 14, 5101 Erpent, België. Btw BE0691653847. E-mail: <a href=\"mailto:info@wize.be\">info@wize.be</a>."]),
-        ("2. Toepassingsgebied", ["Dit beleid geldt voor de websites wize.be en wize.cloud, de klantenzone van het cloudplatform van Wize (my.wize.cloud) en de diensten die we aan onze klanten leveren (advies, coaching, workshops, het bouwen, hosten en onderhouden van websites)."]),
+        ("2. Toepassingsgebied", ["Dit beleid geldt voor de websites wize.be en wize.cloud, de klantenzone van wize.cloud, de dienst voor hosting en onderhoud van websites (my.wize.cloud) en de diensten die we aan onze klanten leveren (advies, coaching, workshops, het bouwen, hosten en onderhouden van websites)."]),
         ("3. Welke gegevens we verzamelen", [
             "<strong>Wanneer u ons contacteert</strong> per e-mail of telefoon: uw naam, e-mailadres, telefoonnummer en de inhoud van uw bericht.",
-            "<strong>Wanneer u klant bent van het cloudplatform van Wize</strong>:",
+            "<strong>Wanneer u klant bent van de hostingdienst wize.cloud</strong>:",
             [
                 "uw organisatie: naam, statuut van onderneming of zelfstandige, ondernemingsnummer, btw-nummer, adres en gekozen formule",
                 "de personen met toegang tot de klantenzone: naam, e-mailadres en voorkeurtaal",
